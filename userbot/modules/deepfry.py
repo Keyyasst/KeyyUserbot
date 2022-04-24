@@ -38,11 +38,11 @@ from PIL import Image, ImageEnhance, ImageOps
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 from userbot.utils import check_media
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"deepfry(?: |$)(.*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"deepfry(?: |$)(.*)"))
 async def deepfryer(event):
     try:
         frycount = int(event.pattern_match.group(1))
