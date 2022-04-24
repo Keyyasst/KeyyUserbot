@@ -528,7 +528,7 @@ with bot:
                     description="Repository Kᴇʏʏ-Usᴇʀʙᴏᴛ ",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Keyy](https://t.me/@mfbyh)\n✰ **Support :** @pantekyks\n✰ **Repository :** [KeyyUserbot](https://github.com/Keyyasst/KeyyUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Kᴇʏʏ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Keyy](https://t.me/@mfbyh)\n✰ **Support :** @pantekyks\n✰ **Repository :** [KeyyUserbot](https://github.com/Keyyasst/KeyyUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
@@ -577,7 +577,7 @@ with bot:
                     description="Kᴇʏʏ-Usᴇʀʙᴏᴛ  | Telethon",
                     url="https://t.me/pantekyks",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @pantekyks\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Kᴇʏʏ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @pantekyks\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
