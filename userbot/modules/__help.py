@@ -23,10 +23,10 @@ from telethon.tl.functions.contacts import UnblockRequest
 from userbot import BOT_USERNAME
 from userbot import CMD_HANDLER as cmd
 from userbot import bot
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="helpme")
+@keyy_cmd(pattern="helpme")
 async def _(event):
     if event.fwd_from:
         return
