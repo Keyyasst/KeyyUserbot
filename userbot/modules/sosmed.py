@@ -11,10 +11,10 @@ from telethon.tl.functions.messages import DeleteHistoryRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
+from userbot.utils import edit_delete, edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="sosmed(?: |$)(.*)")
+@keyy_cmd(pattern="sosmed(?: |$)(.*)")
 async def insta(event):
     xxnx = event.pattern_match.group(1)
     if xxnx:
@@ -52,7 +52,7 @@ async def insta(event):
             await xx.delete()
 
 
-@bdrl_cmd(pattern="dez(?: |$)(.*)")
+@keyy_cmd(pattern="dez(?: |$)(.*)")
 async def DeezLoader(event):
     if event.fwd_from:
         return
