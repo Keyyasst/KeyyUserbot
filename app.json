@@ -1,9 +1,9 @@
 {
-  "name": "Bdrl-Userbot",
-  "description": "[Bdrl-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
-  "logo": "https://telegra.ph/file/6ff3f7d3258d7a0b412e7.jpg",
-  "keywords": ["telegram", "userbot", "bdrluserbot", "modular", "python"],
-  "repository": "https://github.com/Yansaii/BdrlUserbot",
+  "name": "Keyy-Userbot",
+  "description": "[Keyy-Userbot] userbot Telegram modular yang berjalan pada Python 3.9+",
+  "logo": "https://telegra.ph/file/42a7c87c805913a971006.jpg",
+  "keywords": ["telegram", "userbot", "keyyuserbot", "modular", "python"],
+  "repository": "https://github.com/Keyyasst/KeyyUserbot",
   "stack": "container",
   "env": {
     "API_KEY": {
