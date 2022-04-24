@@ -1,10 +1,10 @@
 <a href="https://t.me/pantekyks"><img src="https://see.fontimg.com/api/renderfont4/ZV22x/eyJyIjoiZnMiLCJoIjoxMDQsInciOjE2MDAsImZzIjo2NSwiZmdjIjoiIzAwMDAwMCIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/QkRSTCBVU0VSQk9U/silvers-personal-use-regular.png" alt="3D fonts"></a>
 <p align="center">
-    <img alt="BDRL VERSION" src="https://img.shields.io/badge/BDRL%20VERSION-4.+-brightgreen"/>
+    <img alt="KEYY VERSION" src="https://img.shields.io/badge/KEYY%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
-           <a href="https://travis-ci.com/Yansaii/BdrlUserbot.svg?branch=main" /></a>
-    <a href="https://github.com/Yansaii/BdrlUserbot/network/members"> <img src="https://img.shields.io/github/forks/Yansaii/BdrlUserbot?logo=github&style=for-the-badge" /></a>
-    <a href="https://github.com/Yansaii/BdrlUserbot"> <img src="https://img.shields.io/github/repo-size/Yansaii/BdrlUserbot?logo=github&style=for-the-badge" /></a>
+           <a href="https://travis-ci.com/Keyyasst/KeyyUserbot.svg?branch=main" /></a>
+    <a href="https://github.com/Keyyasst/KeyyUserbot/network/members"> <img src="https://img.shields.io/github/forks/Keyyasst/KeyyUserbot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/Keyyasst/KeyyUserbot"> <img src="https://img.shields.io/github/repo-size/Keyyasst/KeyyUserbot?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.0-blue?style=for-the-badge&logo=appveyor"/>
    </p>
@@ -13,7 +13,7 @@
   <img src="https://telegra.ph/file/42a7c87c805913a971006.jpg">
 </p>
 
-Bdel-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
+Keyy-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
 
 Berbasis [Paperplane](https://github.com/RaphielGang/Telegram-UserBot) dan [ProjectBish](https://github.com/adekmaulana/ProjectBish) userbot.
 Saya membuat repository ini untuk memilih dan menambahkan beberapa modul yang saya butuhkan dengan banyak perubahan, fitur dan modul.
@@ -27,7 +27,7 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Yansaii/BdrlUserbot"> <img 
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Keyyasst/KeyyUserbot"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
@@ -60,6 +60,6 @@ src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&log
 *   [Risman](https://github.com/mrismanaziz/Man-Userbot) :  Man-Userbot
 *   [Alvin](https://github.com/Zora24/Lord-Userbot) : Lord-Userbot
 *   [Bdrl](https://github.com/Yansaii/BdrlUserbot) : Jamet-Bdrl
-
+*   [Keyy](https://github.com/Keyyasst/KeyyUserbot) : Keyy-Userbot
 ## License
-Licensed under [Raphielscape Public License](https://github.com/Yansaii/BdrlUserbot/blob/BdrlUserbot/LICENSE) - Version 1.d, February 2020
+Licensed under [Raphielscape Public License](https://github.com/Keyyasst/KeyyUserbot/blob/KeyyUserbot/LICENSE) - Version 1.d, February 2020
