@@ -16,7 +16,7 @@ from telethon.tl.types import User
 from userbot import BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, COUNT_PM, LASTMSG, LOGS, PM_AUTO_BAN, PM_LIMIT, bot
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 from userbot.utils import edit_delete, edit_or_reply
 
 DEF_UNAPPROVED_MSG = (
@@ -27,7 +27,7 @@ DEF_UNAPPROVED_MSG = (
     "**ᴋᴀʀᴇɴᴀ sᴀʏᴀ ᴀᴋᴀɴ ᴏᴛᴏᴍᴀᴛɪs ᴍᴇᴍʙʟᴏᴋɪʀ ᴋᴀᴍᴜ** \n"
     "╔═════════════════════╗\n"
     "│○›ᴘᴇsᴀɴ ᴏᴛᴏᴍᴀᴛɪs           \n"
-    "│○›ʙʏ Bᴅʀʟ-Usᴇʀʙᴏᴛ           \n"
+    "│○›ʙʏ keyy-Usᴇʀʙᴏᴛ           \n"
     "╚═════════════════════╝"
 )
 
@@ -163,7 +163,7 @@ async def auto_accept(event):
                     )
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"notifoff$"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"notifoff$"))
 async def notifoff(noff_event):
     try:
         from userbot.modules.sql_helper.globals import addgvar
@@ -175,7 +175,7 @@ async def notifoff(noff_event):
     )
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"notifon$"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"notifon$"))
 async def notifon(non_event):
     try:
         from userbot.modules.sql_helper.globals import delgvar
@@ -187,7 +187,7 @@ async def notifon(non_event):
     )
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"(?:setuju|ok)\s?(.)?"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"(?:setuju|ok)\s?(.)?"))
 async def approvepm(apprvpm):
     """For .ok command, give someone the permissions to PM you."""
     try:
@@ -250,7 +250,7 @@ async def approvepm(apprvpm):
     )
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"(?:tolak|nopm)\s?(.)?"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"(?:tolak|nopm)\s?(.)?"))
 async def disapprovepm(disapprvpm):
     try:
         from userbot.modules.sql_helper.pm_permit_sql import dissprove
@@ -304,7 +304,7 @@ async def disapprovepm(disapprvpm):
     )
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"block$"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"block$"))
 async def blockpm(block):
     """For .block command, block people from PMing you!"""
     if block.reply_to_msg_id:
@@ -330,7 +330,7 @@ async def blockpm(block):
         pass
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"unblock$"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"unblock$"))
 async def unblockpm(unblock):
     """For .unblock command, let people PMing you again!"""
     if unblock.reply_to_msg_id:
@@ -340,7 +340,7 @@ async def unblockpm(unblock):
         await unblock.edit("**Anda Sudah Tidak Diblokir Lagi.**")
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"(set|get|reset) pmpermit(?: |$)(\w*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"(set|get|reset) pmpermit(?: |$)(\w*)"))
 async def add_pmsg(cust_msg):
     """Set your own Unapproved message"""
     if not PM_AUTO_BAN:
