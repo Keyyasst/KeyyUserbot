@@ -533,7 +533,7 @@ with bot:
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Keyyasst/KeyyUserbot"
                             ),
                         ],
                     ],
