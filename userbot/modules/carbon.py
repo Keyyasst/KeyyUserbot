@@ -16,7 +16,7 @@ from carbonnow import Carbon
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
+from userbot.utils import edit_delete, edit_or_reply, keyy_cmd
 from userbot.utils.misc import Carbon
 
 from .vcplugin import vcmention
@@ -173,7 +173,7 @@ all_col = [
 ]
 
 
-@bdrl_cmd(pattern="(rc|c)arbon")
+@keyy_cmd(pattern="(rc|c)arbon")
 async def crbn(event):
     from_user = vcmention(event.sender)
     xxxx = await edit_or_reply(event, "Processing")
@@ -203,7 +203,7 @@ async def crbn(event):
     )
 
 
-@bdrl_cmd(pattern="ccarbon ?(.*)")
+@keyy_cmd(pattern="ccarbon ?(.*)")
 async def crbn(event):
     from_user = vcmention(event.sender)
     match = event.pattern_match.group(1).strip()
