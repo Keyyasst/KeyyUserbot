@@ -2,10 +2,10 @@ import random
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import deEmojify, edit_or_reply, bdrl_cmd
+from userbot.utils import deEmojify, edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="rst(?: |$)(.*)")
+@keyy_cmd(pattern="rst(?: |$)(.*)")
 async def rastick(animu):
     text = animu.pattern_match.group(1)
     xx = await edit_or_reply(animu, "`Processing...`")
