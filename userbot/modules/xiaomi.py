@@ -6,10 +6,10 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="firmware(?: |$)(.*)")
+@keyy_cmd(pattern="firmware(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -33,7 +33,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="fastboot(?: |$)(.*)")
+@keyy_cmd(pattern="fastboot(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -57,7 +57,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="recovery(?: |$)(.*)")
+@keyy_cmd(pattern="recovery(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -81,7 +81,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="pb(?: |$)(.*)")
+@keyy_cmd(pattern="pb(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -105,7 +105,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="of(?: |$)(.*)")
+@keyy_cmd(pattern="of(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -129,7 +129,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="eu(?: |$)(.*)")
+@keyy_cmd(pattern="eu(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -153,7 +153,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="vendor(?: |$)(.*)")
+@keyy_cmd(pattern="vendor(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -177,7 +177,7 @@ async def _(event):
             await event.client.forward_messages(event.chat_id, response.message)
 
 
-@bdrl_cmd(pattern="specs(?: |$)(.*)")
+@keyy_cmd(pattern="specs(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
