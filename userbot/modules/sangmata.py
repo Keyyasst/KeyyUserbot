@@ -15,11 +15,11 @@ from userbot.utils import (
     edit_delete,
     edit_or_reply,
     get_user_from_event,
-    bdrl_cmd,
+    keyy_cmd,
 )
 
 
-@bdrl_cmd(pattern="sg(u)?(?:\s|$)([\s\S]*)")
+@keyy_cmd(pattern="sg(u)?(?:\s|$)([\s\S]*)")
 async def _(event):
     input_str = "".join(event.text.split(maxsplit=1)[1:])
     reply_message = await event.get_reply_message()
