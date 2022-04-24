@@ -7,7 +7,7 @@
 # FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
 # t.me/SharingUserbot & t.me/Lunatic0de
 # recode by @greyyvbss
-# Recode2 By @BukanBdrl
+# Recode2 By @mfbyh
 import asyncio
 
 from requests import get
@@ -15,7 +15,7 @@ from telethon.errors.rpcerrorlist import FloodWaitError
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, DEVS
-from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
+from userbot.utils import edit_delete, edit_or_reply, keyy_cmd
 
 while 0 < 6:
     _GCAST_BLACKLIST = get(
@@ -32,7 +32,7 @@ while 0 < 6:
 del _GCAST_BLACKLIST
 
 
-@bdrl_cmd(pattern="gcast(?: |$)(.*)")
+@keyy_cmd(pattern="gcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if xx:
@@ -63,7 +63,7 @@ async def gcast(event):
     )
 
 
-@bdrl_cmd(pattern="gucast(?: |$)(.*)")
+@keyy_cmd(pattern="gucast(?: |$)(.*)")
 async def gucast(event):
     xx = event.pattern_match.group(1)
     if xx:
