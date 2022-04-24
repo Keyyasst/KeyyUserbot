@@ -22,7 +22,7 @@ from userbot import CMD_HELP
 from userbot import PLAY_PIC as fotoplay
 from userbot import QUEUE_PIC as ngantri
 from userbot import call_py, owner
-from userbot.utils import bash, edit_delete, edit_or_reply, bdrl_cmd
+from userbot.utils import bash, edit_delete, edit_or_reply, keyy_cmd
 from userbot.utils.chattitle import CHAT_TITLE
 from userbot.utils.queues.queues import (
     QUEUE,
@@ -109,7 +109,7 @@ async def skip_current_song(chat_id: int):
     return [songname, link, type]
 
 
-@bdrl_cmd(pattern="play(?:\\s|$)([\\s\\S]*)")
+@keyy_cmd(pattern="play(?:\\s|$)([\\s\\S]*)")
 async def vc_play(event):
     title = event.pattern_match.group(1)
     replied = await event.get_reply_message()
@@ -201,7 +201,7 @@ async def vc_play(event):
                 await botman.edit(f"`{ep}`")
 
 
-@bdrl_cmd(pattern="vplay(?:\\s|$)([\\s\\S]*)")
+@keyy_cmd(pattern="vplay(?:\\s|$)([\\s\\S]*)")
 async def vc_vplay(event):
     title = event.pattern_match.group(1)
     replied = await event.get_reply_message()
@@ -340,7 +340,7 @@ async def vc_vplay(event):
                     await xnxx.edit(f"`{ep}`")
 
 
-@bdrl_cmd(pattern="end$")
+@keyy_cmd(pattern="end$")
 async def vc_end(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -354,7 +354,7 @@ async def vc_end(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@bdrl_cmd(pattern="skip(?:\\s|$)([\\s\\S]*)")
+@keyy_cmd(pattern="skip(?:\\s|$)([\\s\\S]*)")
 async def vc_skip(event):
     chat_id = event.chat_id
     if len(event.text.split()) < 2:
@@ -383,7 +383,7 @@ async def vc_skip(event):
             await event.edit(DELQUE)
 
 
-@bdrl_cmd(pattern="pause$")
+@keyy_cmd(pattern="pause$")
 async def vc_pause(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -396,7 +396,7 @@ async def vc_pause(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@bdrl_cmd(pattern="resume$")
+@keyy_cmd(pattern="resume$")
 async def vc_resume(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
@@ -409,7 +409,7 @@ async def vc_resume(event):
         await edit_delete(event, "**Tidak Sedang Memutar Streaming**")
 
 
-@bdrl_cmd(pattern=r"volume(?: |$)(.*)")
+@keyy_cmd(pattern=r"volume(?: |$)(.*)")
 async def vc_volume(event):
     query = event.pattern_match.group(1)
     chat = await event.get_chat()
@@ -437,7 +437,7 @@ async def vc_volume(event):
 # ambil boleh apus credits jangan ya ka:)
 
 
-@bdrl_cmd(pattern="joinvc(?: |$)(.*)")
+@keyy_cmd(pattern="joinvc(?: |$)(.*)")
 async def join_(event):
     xnxx = await edit_or_reply(event, f"**Processing**")
     if len(event.text.split()) > 1:
@@ -462,7 +462,7 @@ async def join_(event):
         await edit_delete(event, f"**ERROR:** `{ex}`")
 
 
-@bdrl_cmd(pattern="leavevc(?: |$)(.*)")
+@keyy_cmd(pattern="leavevc(?: |$)(.*)")
 async def leavevc(event):
     """leave video chat"""
     xnxx = await edit_or_reply(event, "Processing")
@@ -480,7 +480,7 @@ async def leavevc(event):
         await edit_delete(event, f"**Maaf {owner} Tidak di VCG**")
 
 
-@bdrl_cmd(pattern="playlist$")
+@keyy_cmd(pattern="playlist$")
 async def vc_playlist(event):
     chat_id = event.chat_id
     if chat_id in QUEUE:
