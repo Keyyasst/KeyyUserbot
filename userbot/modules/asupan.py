@@ -4,14 +4,14 @@
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import bdrl_cmd
+from userbot.utils import keyy_cmd
 import random
 from userbot import owner
 from telethon.tl.types import InputMessagesFilterVideo
 from telethon.tl.types import InputMessagesFilterVoice
 
 
-@bdrl_cmd(pattern="asupan$")
+@keyy_cmd(pattern="asupan$")
 async def _(event):
     try:
         asupannya = [
@@ -30,7 +30,7 @@ async def _(event):
     except Exception:
         await event.edit("Tidak bisa menemukan video asupan.")
 
-@bdrl_cmd(pattern="desah$")
+@keyy_cmd(pattern="desah$")
 async def _(event):
     try:
         desahnya = [
