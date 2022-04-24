@@ -14,12 +14,12 @@ from pprint import pprint
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.utils import bdrl_cmd
+from userbot.utils import keyy_cmd
 
 p, pp = print, pprint
 
 
-@bdrl_cmd(pattern="eval(?:\s|$)([\s\S]*)")
+@keyy_cmd(pattern="eval(?:\s|$)([\s\S]*)")
 async def _(event):
     expression = event.pattern_match.group(1)
     if not expression:
@@ -92,7 +92,7 @@ async def _(event):
         await xx.edit(final_output)
 
 
-@bdrl_cmd(pattern="exec(?: |$|\n)([\s\S]*)")
+@keyy_cmd(pattern="exec(?: |$|\n)([\s\S]*)")
 async def run(event):
     code = event.pattern_match.group(1)
     if not code:
@@ -136,7 +136,7 @@ async def run(event):
     await event.edit(f"**Query:**\n`{codepre}`\n\n**Result:**\n`{stdout}`")
 
 
-@bdrl_cmd(pattern="term(?: |$|\n)([\s\S]*)")
+@keyy_cmd(pattern="term(?: |$|\n)([\s\S]*)")
 async def terminal_runner(event):
     command = event.pattern_match.group(1)
     if not command:
@@ -169,7 +169,7 @@ async def terminal_runner(event):
     await event.edit(f"**Command:**\n`{command}`\n\n**Result:**\n`{result}`")
 
 
-@bdrl_cmd(pattern="json$")
+@keyy_cmd(pattern="json$")
 async def _(event):
     if event.fwd_from:
         return
