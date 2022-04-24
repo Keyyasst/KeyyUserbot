@@ -3,7 +3,7 @@
 # Ported by @mrismanaziz
 # FROM Man-Userbot
 # Recode by @greyyvbss
-# Recode2 by @BukanBdrl
+# Recode2 by @mfbyh
 """
    Heroku manager for your userbot
 """
@@ -19,7 +19,7 @@ from userbot import BOTLOG, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, SUDO_USERS
 from userbot.modules.sql_helper.globals import addgvar, delgvar, gvarstatus
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 heroku_api = "https://api.heroku.com"
@@ -36,7 +36,7 @@ else:
 """
 
 
-@bdrl_cmd(pattern="(get|del) var(?: |$)(\w*)")
+@keyy_cmd(pattern="(get|del) var(?: |$)(\w*)")
 async def variable(var):
     exe = var.pattern_match.group(1)
     if app is None:
@@ -97,7 +97,7 @@ async def variable(var):
             return True
 
 
-@bdrl_cmd(pattern="set var (\w*) ([\s\S]*)")
+@keyy_cmd(pattern="set var (\w*) ([\s\S]*)")
 async def set_var(var):
     if app is None:
         return await edit_or_reply(
@@ -134,7 +134,7 @@ async def set_var(var):
 """
 
 
-@bdrl_cmd(pattern="(dynousage|dyno)(?: |$)")
+@keyy_cmd(pattern="(dynousage|dyno)(?: |$)")
 async def dyno_usage(dyno):
     if app is None:
         return await dyno.edit(
@@ -202,7 +202,7 @@ async def dyno_usage(dyno):
         return True
 
 
-@bdrl_cmd(pattern="usage(?: |$)")
+@keyy_cmd(pattern="usage(?: |$)")
 async def fake_dyno(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
@@ -215,7 +215,7 @@ async def fake_dyno(event):
     )
 
 
-@bdrl_cmd(pattern="logs")
+@keyy_cmd(pattern="logs")
 async def _(dyno):
     if app is None:
         return await edit_or_reply(
@@ -226,7 +226,7 @@ async def _(dyno):
     await edit_or_reply(xx, data, deflink=True, linktext="**✣ Ini Logs Heroku Anda :**")
 
 
-@bdrl_cmd(pattern="getdb ?(.*)")
+@keyy_cmd(pattern="getdb ?(.*)")
 async def getsql(event):
     if event.sender_id in SUDO_USERS:
         return
@@ -246,7 +246,7 @@ async def getsql(event):
     )
 
 
-@bdrl_cmd(pattern="setdb ?(.*)")
+@keyy_cmd(pattern="setdb ?(.*)")
 async def setsql(event):
     if event.sender_id in SUDO_USERS:
         return
@@ -266,7 +266,7 @@ async def setsql(event):
     await xxnx.edit(f"**Variable** `{var_}` **successfully added with value** `{valu}`")
 
 
-@bdrl_cmd(pattern="deldb ?(.*)")
+@keyy_cmd(pattern="deldb ?(.*)")
 async def delsql(event):
     if event.sender_id in SUDO_USERS:
         return
