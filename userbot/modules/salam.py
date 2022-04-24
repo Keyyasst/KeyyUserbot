@@ -2,38 +2,38 @@ from time import sleep
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="p(?: |$)(.*)")
+@keyy_cmd(pattern="p(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(event, "**Assalamualaikum Warohmatulohi Wabarokatu**")
 
 
-@bdrl_cmd(pattern="^P(?: |$)(.*)")
+@keyy_cmd(pattern="^P(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(event, "**Assalamu'alaikum**")
     
-@bdrl_cmd(pattern="^L(?: |$)(.*)")
+@keyy_cmd(pattern="^L(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(event, "**Wa'alaikumsalam**")
 
     
-@bdrl_cmd(pattern="P(?: |$)(.*)")
+@keyy_cmd(pattern="P(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"**Hy kaa 🥺**")
     sleep(2)
     await xx.edit("**Assalamualaikum...**")
 
 
-@bdrl_cmd(pattern="l(?: |$)(.*)")
+@keyy_cmd(pattern="l(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event,f"**Astaghfirullah, Jawab salam dong**")
     sleep(2)
     await xx.edit("**Wa'alaikumsalam**")
 
 
-@bdrl_cmd(pattern="L(?: |$)(.*)")
+@keyy_cmd(pattern="L(?: |$)(.*)")
 async def _(event):
     xx = await edit_or_reply(event, f"**Astaghfirullah, Jawab salam dong**")
     sleep(2)
