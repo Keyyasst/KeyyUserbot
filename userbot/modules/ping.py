@@ -14,23 +14,24 @@ from speedtest import Speedtest
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, DEVS, StartTime, bot
 from userbot.events import register
-from userbot.utils import edit_or_reply, humanbytes, bdrl_cmd
+from userbot.utils import edit_or_reply, humanbytes, keyy_cmd
 
 absen = [
-    "**Hadir bang Bdrl** 😁",
+    "**Hadir bang keyy** 😁",
     "**Hadir kak** 😉",
     "**Hadir dong** 😁",
-    "**Hadir bdrl ganteng** 🥵",
+    "**Hadir brian ganteng** 🥵",
     "**Hadir bro** 😎",
-    "**Hadir Bdrl maap telat** 🥺",
-    "**Hadir Tuan Bdrl** 😎",
+    "**Hadir tuan** 😔", 
+    "**maap telat** 🥺",
+    "**Hadir Tuan brian** 😎",
 ]
 
 salam = [
     "**Wa'alaikumsalam ganteng** 🥰🥰",
     "**Wa'alaikumsalam WR WB** 👋🏻",
     "**Iyah Waalaikusalam** 🥵",
-    "**Wa'alaikumsalam bang bdrl**",
+    "**Wa'alaikumsalam bang brian**",
     "**Wa'alaikumsalam** 🥰",
     "**Wa'alaikumsalan Warohmatullohi Wabarokatu**",
     "**Wa'alaikumsalam Ustad**",
@@ -44,10 +45,10 @@ pacar = [
     "**Mau ga bang jadi pacar aku?** 😁",
     "**Mending pc aku bang** 🥺",
     "**Main Sama Aku yuk**🥵🥵💦",
-    "**Bdrl Mau Aku Cium Ga??**🥵",
-    "**Bdrl I Love You**",
-    "**Bdrl Aku Sayang Kamu ,Mwahhh😘**",
-    "**Lagi sange Bang Bdrl** 🥵",
+    "**brian Mau Aku Cium Ga??**🥵",
+    "**keyy I Love You**",
+    "**Brian Aku Sayang Kamu ,Mwahhh😘**",
+    "**Lagi sange Bang brian** 🥵",
 ]
 
 roas = [
@@ -88,7 +89,7 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-@bdrl_cmd(pattern="ping$")
+@keyy_cmd(pattern="ping$")
 async def _(ping):
     """"For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -107,7 +108,7 @@ async def _(ping):
         f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
     
-@bdrl_cmd(pattern="peng$")
+@keyy_cmd(pattern="peng$")
 async def _(peng):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -128,7 +129,7 @@ async def _(peng):
     )
 
 
-@bdrl_cmd(pattern="pink$")
+@keyy_cmd(pattern="pink$")
 async def _(pink):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
@@ -159,7 +160,7 @@ async def _(pink):
     )
 
     
-@bdrl_cmd(pattern="speed$")
+@keyy_cmd(pattern="speed$")
 async def _(speed):
     """For .speedtest command, use SpeedTest to check server speeds."""
     xxnx = await edit_or_reply(speed, "`Running speed test...`")
@@ -191,7 +192,7 @@ async def _(speed):
     )
 
 
-@bdrl_cmd(pattern="pong$")
+@keyy_cmd(pattern="pong$")
 async def _(pong):
     """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
@@ -203,26 +204,26 @@ async def _(pong):
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
 @register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
-async def bdrl(ganteng):
+async def keyy(ganteng):
     await ganteng.reply(random.choice(absen))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^Pe$")
-async def bdrl(ganteng):
+async def keyy(ganteng):
     await ganteng.reply(random.choice(salam))
 
 
-@register(incoming=True, from_users=1883126074, pattern=r"^.bdrl$")
-async def bdrl(ganteng):
+@register(incoming=True, from_users=1731365899, pattern=r"^.keyy$")
+async def keyy(ganteng):
     await ganteng.reply(random.choice(pacar))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.roasting$")
-async def bdrl(ganteng):
+async def keyy(ganteng):
     await ganteng.reply(random.choice(roas))
 
 
-@bdrl_cmd(pattern="pung(?: |$)(.*)")
+@keyy_cmd(pattern="pung(?: |$)(.*)")
 async def _(event):  
     if event.fwd_from:
         return
