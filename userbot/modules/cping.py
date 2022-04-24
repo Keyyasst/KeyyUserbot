@@ -71,6 +71,6 @@ async def get_readable_time(seconds: int) -> str:
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.cping$")
 
-async def _(bdrl):
+async def _(keyy):
 
-    await bdrl.reply(random.choice(cping))
+    await keyy.reply(random.choice(cping))
