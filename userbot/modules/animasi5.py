@@ -2,11 +2,11 @@ import asyncio
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 from userbot.utils import edit_or_reply
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"virus(?: |$)(.*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"virus(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
