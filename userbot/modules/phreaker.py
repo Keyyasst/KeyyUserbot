@@ -4,10 +4,10 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="nmap(?: |$)(.*)")
+@keyy_cmd(pattern="nmap(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -31,7 +31,7 @@ async def _(event):
             await event.client.delete_messages(response.message.message)
 
 
-@bdrl_cmd(pattern="subd(?: |$)(.*)")
+@keyy_cmd(pattern="subd(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -55,7 +55,7 @@ async def _(event):
             await event.client.delete_messages(response.message.message)
 
 
-@bdrl_cmd(pattern="cek(?: |$)(.*)")
+@keyy_cmd(pattern="cek(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -79,7 +79,7 @@ async def _(event):
             await event.client.delete_messages(httpheader, response.message.message)
 
 
-@bdrl_cmd(pattern="bin(?: |$)(.*)")
+@keyy_cmd(pattern="bin(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -102,7 +102,7 @@ async def _(event):
             await event.client.delete_messages(response.message.message)
 
 
-@bdrl_cmd(pattern="cc(?: |$)(.*)")
+@keyy_cmd(pattern="cc(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
