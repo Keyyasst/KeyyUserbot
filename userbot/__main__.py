@@ -42,16 +42,16 @@ try:
     name = user.first_name
     uid = user.id
     blacklistkeyy = requests.get(
-        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/keyyblacklist.json"
+        "https://raw.githubusercontent.com/Keyyasst/Reforestation/master/keyyblacklist.json"
     ).json()
     if user.id in blacklistkeyy:
         LOGS.warning(
             "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @mrismanaziz"
         )
         sys.exit(1)
-    if 1883126074 not in DEVS:
+    if 1731365899 not in DEVS:
         LOGS.warning(
-            f"EOL\nKᴇʏʏ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Yansaii>"
+            f"EOL\nKᴇʏʏ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Keyyasst>"
         )
         sys.exit(1)
 except Exception as e:
@@ -93,7 +93,7 @@ async def keyy_userbot_on():
     except Exception as e:
         LOGS.info(str(e))
     try:
-        await bot(JoinChannelRequest("@RuangTerbukaa"))
+        await bot(JoinChannelRequest("@akspaste"))
     except BaseException:
         pass
     try:
@@ -108,7 +108,7 @@ async def keyy_userbot_on():
             manage_call=True,
         )
         await bot(EditAdminRequest(int(BOTLOG_CHATID), BOT_USERNAME, rights, "Assistant"))
-        logo = "userbot/resources/20220419_024259.jpg"
+        logo = "userbot/resources/42a7c87c805913a971006.jpg"
         await bot(EditPhotoRequest(BOTLOG_CHATID, await bot.upload_file(logo)))
     except BaseException:
         pass
