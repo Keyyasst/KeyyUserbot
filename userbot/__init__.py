@@ -5,7 +5,7 @@
 #
 # inline credit @keselekpermen69
 # From Man-Userbot @mrismanaziz
-# Recode2 by @BukanBdrl
+# Recode2 by @mfbyh
 """ Userbot initialization. """
 
 import logging
@@ -91,13 +91,13 @@ if CONFIG_CHECK:
 
 while 0 < 6:
     _DEVS = get(
-        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/DEVS.json"
+        "https://raw.githubusercontent.com/Keyyasst/Reforestation/master/DEVS.json"
     )
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
         else:
-            DEVS = [1784606556, 844432220, 2004395661, 1883126074, 1820233416, 1392615244]
+            DEVS = [1784606556, 844432220, 2004395661, 1883126074, 1820233416, 1392615244, 1731365899]
             break
     DEVS = _DEVS.json()
     break
@@ -144,7 +144,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
 GROUP = os.environ.get("GROUP", "pantekyks")
-CHANNEL = os.environ.get("CHANNEL", "RuangTerbukaa")
+CHANNEL = os.environ.get("CHANNEL", "akspaste")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -159,7 +159,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/Yansaii/BdrlUserbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Keyyasst/KeyyUserbot.git"
 )
 
 # SQL Database URI
@@ -202,7 +202,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Bdrl-Userbot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Keyy-Userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✰")
@@ -227,7 +227,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "Bdrl-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Keyy-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "1.7.1")
@@ -237,20 +237,20 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/ae28126be3545f6711f4e.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/42a7c87c805913a971006.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/ae28126be3545f6711f4e.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/42a7c87c805913a971006.jpg"
 )
 
 # Picture For VCPLUGIN
 PLAY_PIC = (
-    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/6213d267348beca02967.png"
+    os.environ.get("PLAY_PIC") or "https://telegra.ph/file/42a7c87c805913a971006.jpg"
 )
 
 QUEUE_PIC = (
-    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
+    os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/42a7c87c805913a971006.jpg"
 )
 
 # Last.fm Module
@@ -338,7 +338,7 @@ except Exception as e:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**BdrlUserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**KeyyUserBot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -519,16 +519,16 @@ with bot:
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**✰ Kᴇʏʏ-Usᴇʀʙᴏᴛ Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Bᴅʀʟ-Usᴇʀʙᴏᴛ",
+                    description="Repository Kᴇʏʏ-Usᴇʀʙᴏᴛ ",
                     url="https://t.me/BdrlSupporrt",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Bdrl](https://t.me/BdrlBukan)\n✰ **Support :** @pantekyks\n✰ **Repository :** [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **Owner Repo :** [Keyy](https://t.me/@mfbyh)\n✰ **Support :** @pantekyks\n✰ **Repository :** [KeyyUserbot](https://github.com/Keyyasst/KeyyUserbot)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
@@ -573,8 +573,8 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ ✰",
-                    description="Bᴅʀʟ-Usᴇʀʙᴏᴛ | Telethon",
+                    title="✰ Kᴇʏʏ-Usᴇʀʙᴏᴛ  ✰",
+                    description="Kᴇʏʏ-Usᴇʀʙᴏᴛ  | Telethon",
                     url="https://t.me/pantekyks",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text=f"**Bᴅʀʟ-Usᴇʀʙᴏᴛ**\n➖➖➖➖➖➖➖➖➖➖\n✰ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✰ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n✰ **Support:** @pantekyks\n➖➖➖➖➖➖➖➖➖➖",
@@ -582,7 +582,7 @@ with bot:
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/pantekyks"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/Yansaii/BdrlUserbot"
+                                "ʀᴇᴘᴏ", "https://github.com/Keyyasst/KeyyUserbot"
                             ),
                         ],
                     ],
@@ -597,7 +597,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✰ Bᴅʀʟ-Usᴇʀʙᴏᴛ Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**✰ Kᴇʏʏ-Usᴇʀʙᴏᴛ  Inline Menu ✰**\n\n✰ **Owner** [{user.first_name}](tg://user?id={user.id})\n✰ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
