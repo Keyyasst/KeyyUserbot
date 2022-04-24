@@ -19,7 +19,7 @@ from telethon import events
 from userbot import CMD_HANDLER, CMD_LIST, bot
 
 
-def bdrl_cmd(pattern=None, command=None, **args):
+def keyy_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
@@ -182,7 +182,7 @@ def register(**args):
                 if not disable_errors:
                     date = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-                    text = "**★ BDRLUSERBOT ERROR REPORT ★**\n\n"
+                    text = "**★ KEYYUSERBOT ERROR REPORT ★**\n\n"
                     link = "[Group Support](https://t.me/pantekyks)"
                     text += "Jika mau, Anda bisa melaporkan error ini, "
                     text += f"Cukup forward saja pesan ini ke {link}.\n\n"
