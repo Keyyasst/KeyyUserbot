@@ -14,10 +14,10 @@ from telethon.utils import get_display_name
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP
-from userbot.utils import bdrl_cmd
+from userbot.utils import keyy_cmd
 
 
-@bdrl_cmd(pattern="tag(on|off|all|bots|rec|admins|owner)?(.*)")
+@keyy_cmd(pattern="tag(on|off|all|bots|rec|admins|owner)?(.*)")
 async def _(e):
     okk = e.text
     lll = e.pattern_match.group(2)
