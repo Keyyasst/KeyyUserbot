@@ -41,17 +41,17 @@ try:
     user = bot.get_me()
     name = user.first_name
     uid = user.id
-    blacklistbdrl = requests.get(
-        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/bdrlblacklist.json"
+    blacklistkeyy = requests.get(
+        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/keyyblacklist.json"
     ).json()
-    if user.id in blacklistbdrl:
+    if user.id in blacklistkeyy:
         LOGS.warning(
             "MAKANYA GA USAH BERTINGKAH GOBLOK, USERBOTnya GUA MATIIN NAJIS BANGET DIPAKE JAMET KEK LU.\nCredits: @mrismanaziz"
         )
         sys.exit(1)
     if 1883126074 not in DEVS:
         LOGS.warning(
-            f"EOL\nBᴅʀʟ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Yansaii>"
+            f"EOL\nKᴇʏʏ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Yansaii>"
         )
         sys.exit(1)
 except Exception as e:
@@ -73,7 +73,7 @@ LOGS.info(
     f"Jika {name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/pantekyks"
 )
 
-LOGS.info(f"Bdrl-Userbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
+LOGS.info(f"Keyy-Userbot ⚙️ V{BOT_VER} [🔥 BERHASIL DIAKTIFKAN! 🔥]")
 
 
 if not BOTLOG_CHATID:
@@ -82,12 +82,12 @@ if not BOTLOG_CHATID:
     )
     bot.loop.run_until_complete(autopilot())
 
-async def bdrl_userbot_on():
+async def keyy_userbot_on():
     try:
         if BOTLOG_CHATID != 0:
             await bot.send_message(
                 BOTLOG_CHATID,
-                f"✪ **Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Aktifkan** ✪\n━━\n➠ **Userbot Version -** `{BOT_VER}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
+                f"✪ **Kᴇʏʏ-Usᴇʀʙᴏᴛ Berhasil Di Aktifkan** ✪\n━━\n➠ **Userbot Version -** `{BOT_VER}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
             )
 
     except Exception as e:
@@ -115,7 +115,7 @@ async def bdrl_userbot_on():
 
     
 bot.loop.run_until_complete(checking())
-bot.loop.run_until_complete(bdrl_userbot_on())
+bot.loop.run_until_complete(keyy_userbot_on())
 if not BOT_TOKEN:
     bot.loop.run_until_complete(autobot())
 idle()
