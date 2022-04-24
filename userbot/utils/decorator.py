@@ -3,6 +3,7 @@
 # FROM Man-Userbot
 # ReC0de by @grey423
 # Recode2 by @BukanBdrl
+# Recode2 by @mfbyh
 
 
 import inspect
@@ -26,7 +27,7 @@ from userbot import (
 MEMEK = [1972682280]
 TITIT_HANDLER = "*"
 
-def bdrl_cmd(
+def keyy_cmd(
     pattern: str = None,
     allow_sudo: bool = True,
     sempakabri: bool = True,
