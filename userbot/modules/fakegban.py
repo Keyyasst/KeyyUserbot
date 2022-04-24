@@ -7,10 +7,10 @@ from telethon.tl.types import ChannelParticipantsAdmins
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot, owner
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="fgban(?: |$)(.*)")
+@keyy_cmd(pattern="fgban(?: |$)(.*)")
 async def gbun(event):
     if event.fwd_from:
         return
