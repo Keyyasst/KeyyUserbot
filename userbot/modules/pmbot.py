@@ -29,7 +29,7 @@ from userbot.utils import (
     asst_cmd,
     edit_delete,
     edit_or_reply,
-    bdrl_cmd,
+    keyy_cmd,
     reply_id,
     time_formatter,
 )
@@ -172,7 +172,7 @@ async def bot_broadcast(event):
     await br_cast.edit(b_info, parse_mode="html")
 
 
-@bdrl_cmd(pattern="botuser$")
+@keyy_cmd(pattern="botuser$")
 async def bot_user(event):
     "To get list of users who started bot."
     ulist = get_all_starters()
@@ -246,7 +246,7 @@ async def unban_botpms(event):
     await event.reply(msg)
 
 
-@bdrl_cmd(pattern="bblist$")
+@keyy_cmd(pattern="bblist$")
 async def listban_bot(event):
     "To get list of users who are banned in bot."
     ulist = get_all_bl_users()
@@ -289,7 +289,7 @@ async def bot_uinfo(event):
     await info_msg.edit(uinfo)
 
 
-@bdrl_cmd(pattern="(set|reset) pmbot(?: |$)(\\w*)")
+@keyy_cmd(pattern="(set|reset) pmbot(?: |$)(\\w*)")
 async def setpmbot(event):
     try:
         import userbot.modules.sql_helper.globals as sql
