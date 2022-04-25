@@ -1,4 +1,4 @@
-FROM Yansaii/BdrlUserbot:buster
+FROM mrismanaziz/man-userbot:buster
 
 RUN git clone -b main https://github.com/Keyyasst/KeyyUserbot /home/keyyuserbot/ \
     && chmod 777 /home/keyyuserbot \
