@@ -161,12 +161,12 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await event.edit("`[HEROKU]: Update Deploy Bᴅʀʟ-Usᴇʀʙᴏᴛ Sedang Dalam Proses...`")
+        await event.edit("`[HEROKU]: Update Deploy Kᴇʏʏ-Usᴇʀʙᴏᴛ Sedang Dalam Proses...`")
         await deploy(event, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await event.edit("** Bᴅʀʟ-Usᴇʀʙᴏᴛ Sudah Versi Terbaru**")
+        await event.edit("** Kᴇʏʏ-Usᴇʀʙᴏᴛ Sudah Versi Terbaru**")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -204,9 +204,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Bᴅʀʟ-Usᴇʀʙᴏᴛ.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Kᴇʏʏ-Usᴇʀʙᴏᴛ.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Bᴅʀʟ-Usᴇʀʙᴏᴛ.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Kᴇʏʏ-Usᴇʀʙᴏᴛ.\
     "
     }
 )
