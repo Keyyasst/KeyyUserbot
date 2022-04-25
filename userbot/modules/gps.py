@@ -4,10 +4,10 @@ from telethon.tl import types
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"gps(?: |$)(.*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"gps(?: |$)(.*)"))
 async def gps(event):
     if event.fwd_from:
         return
