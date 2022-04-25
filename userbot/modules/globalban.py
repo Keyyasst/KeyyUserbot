@@ -18,7 +18,7 @@ from userbot import BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, DEVS, bot
 from userbot.events import register
-from userbot.utils import edit_or_reply, get_user_from_event, bdrl_cmd
+from userbot.utils import edit_or_reply, get_user_from_event, keyy_cmd
 
 from .admin import BANNED_RIGHTS, UNBAN_RIGHTS
 
@@ -40,7 +40,7 @@ def mentionuser(name, userid):
     return f"[{name}](tg://user?id={userid})"
 
 
-@bdrl_cmd(pattern="gban(?: |$)(.*)")
+@keyy_cmd(pattern="gban(?: |$)(.*)")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cgban(?: |$)(.*)")
 async def gban(event):
     if event.fwd_from:
@@ -94,7 +94,7 @@ async def gban(event):
         )
 
 
-@bdrl_cmd(pattern="ungban(?: |$)(.*)")
+@keyy_cmd(pattern="ungban(?: |$)(.*)")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cungban(?: |$)(.*)")
 async def ungban(event):
     if event.fwd_from:
@@ -143,7 +143,7 @@ async def ungban(event):
         )
 
 
-@bdrl_cmd(pattern="listgban$")
+@keyy_cmd(pattern="listgban$")
 async def gablist(event):
     if event.fwd_from:
         return
