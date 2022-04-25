@@ -2,7 +2,7 @@
 # Ported by @mrismanaziz
 # FROM Man-Userbot
 # Recode by @greyyvbss
-# Recode2 By @BukanBdrl
+# Recode2 By @mfbyh
 
 
 import os
@@ -13,13 +13,13 @@ from pySmartDL import SmartDL
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, bot
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 from userbot.utils import edit_delete, edit_or_reply, reply_id
 
 ppath = os.path.join(os.getcwd(), "temp", "githubuser.jpg")
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"github( -l(\d+))? ([\s\S]*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"github( -l(\d+))? ([\s\S]*)"))
 async def _(event):
     "Get info about an GitHub User"
     reply_to = await reply_id(event)
