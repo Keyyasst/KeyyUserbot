@@ -104,7 +104,7 @@ async def update(event, repo, ups_rem, ac_br):
         ups_rem.pull(ac_br)
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
-    await event.edit("`Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`")
+    await event.edit("`Kᴇʏʏ-Usᴇʀʙᴏᴛ Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`")
 
     try:
         from userbot.modules.sql_helper.globals import addgvar, delgvar
