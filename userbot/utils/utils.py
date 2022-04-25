@@ -109,7 +109,7 @@ async def autobot():
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
             await bot.send_message(
-                bf, f"Owner ~ {who.first_name} \nPowered By ~ @BdrlBukan"
+                bf, f"Owner ~ {who.first_name} \nPowered By ~ @mfbyh"
             )
             await bot.send_message(
                 BOTLOG_CHATID,
@@ -151,7 +151,7 @@ async def autobot():
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
         await bot.send_message(
-            bf, f"Owner ~ {who.first_name} \nPowered By ~ @BdrlBukan"
+            bf, f"Owner ~ {who.first_name} \nPowered By ~ @mfbyh"
         )
         await bot.send_message(
             BOTLOG_CHATID,
@@ -185,7 +185,7 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="My Bdrl Logs",
+                title="My Keyy Logs",
                 about="» Group log Created by: Bᴅʀʟ-Usᴇʀʙᴏᴛ\n\n» Support : @pantekyks\n» Channel: @RuangTerbukaa",
                 megagroup=True,
             ),
