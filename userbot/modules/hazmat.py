@@ -1,5 +1,5 @@
 # Based Code by @adekmaulana
-# Improve by @aidilaryanto
+# Improve by @mfebriansyah
 #
 #
 import os
@@ -9,10 +9,10 @@ from telethon.tl.functions.contacts import UnblockRequest
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
-from userbot.utils import edit_or_reply, bdrl_cmd
+from userbot.utils import edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="hz(:? |$)(.*)?")
+@keyy_cmd(pattern="hz(:? |$)(.*)?")
 async def _(hazmat):
     xx = await edit_or_reply(hazmat, "`Processing Hazmat...`")
     level = hazmat.pattern_match.group(2)
