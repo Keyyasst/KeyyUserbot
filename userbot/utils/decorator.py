@@ -3,7 +3,7 @@
 # FROM Man-Userbot
 # ReC0de by @grey423
 # Recode2 by @BukanBdrl
-# Recode2 by @mfbyh
+
 
 
 import inspect
