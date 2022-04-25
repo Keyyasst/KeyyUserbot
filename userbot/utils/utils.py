@@ -186,7 +186,7 @@ async def autopilot():
         r = await bot(
             CreateChannelRequest(
                 title="My Keyy Logs",
-                about="» Group log Created by: Bᴅʀʟ-Usᴇʀʙᴏᴛ\n\n» Support : @pantekyks\n» Channel: @RuangTerbukaa",
+                about="» Group log Created by: Kᴇʏʏ-Usᴇʀʙᴏᴛ\n\n» Support : @pantekyks\n» Channel: @akspaste",
                 megagroup=True,
             ),
         )
