@@ -194,7 +194,7 @@ async def create_quotly(
 async def Carbon(
     code,
     base_url="https://carbonara-42.herokuapp.com/api/cook",
-    file_name="BdrlUserbot",
+    file_name="KeyyUserbot",
     **kwargs,
 ):
     kwargs["code"] = code
@@ -214,8 +214,8 @@ async def animator(media, mainevent, textevent):
     await mainevent.client.download_media(media, TEMP_DOWNLOAD_DIRECTORY)
     await textevent.edit("`Converting...`")
     await runcmd(
-        f"ffmpeg -ss 00:00:00 -to 00:00:02.900 -i {Bdrl} -vf scale={w}:{h} -c:v libvpx-vp9 -crf 30 -b:v 560k -maxrate 560k -bufsize 256k -an Video.webm"
+        f"ffmpeg -ss 00:00:00 -to 00:00:02.900 -i {Keyy} -vf scale={w}:{h} -c:v libvpx-vp9 -crf 30 -b:v 560k -maxrate 560k -bufsize 256k -an Video.webm"
     )
-    os.remove(Bdrl)
+    os.remove(Keyy)
     vid = "Video.webm"
     return vid
