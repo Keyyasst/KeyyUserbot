@@ -4,7 +4,7 @@
 # You can find misc modules, which dont fit in anything xD
 # Copyright (C) 2022 @mrismanaziz
 # ReCode by @greyyvbss
-# Recode2 by @BukanBdrl
+# Recode2 by @mfbyh
 
 import io
 import os
@@ -23,7 +23,7 @@ from PIL import Image
 from userbot import BOT_VER, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, HEROKU_API_KEY, HEROKU_APP_NAME, SUDO_USERS
-from userbot.utils import edit_or_reply, bdrl_cmd, time_formatter
+from userbot.utils import edit_or_reply, keyy_cmd, time_formatter
 
 # ================= CONSTANT =================
 HEROKU_APP = from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME]
@@ -36,7 +36,7 @@ repo = Repo()
 branch = repo.active_branch.name
 
 
-@bdrl_cmd(pattern="sleep ([0-9]+)$")
+@keyy_cmd(pattern="sleep ([0-9]+)$")
 async def sleepybot(time):
     if time.sender_id in SUDO_USERS:
         return
@@ -52,7 +52,7 @@ async def sleepybot(time):
     await xx.edit("**Oke, saya sudah bangun sekarang.**")
 
 
-@bdrl_cmd(pattern="shutdown$")
+@keyy_cmd(pattern="shutdown$")
 async def shutdown_bot(event):
     if event.fwd_from:
         return
@@ -71,7 +71,7 @@ async def shutdown_bot(event):
         sys.exit(0)
 
 
-@bdrl_cmd(pattern="restart$")
+@keyy_cmd(pattern="restart$")
 async def restart_bot(event):
     if event.sender_id in SUDO_USERS:
         return
@@ -84,17 +84,17 @@ async def restart_bot(event):
     execle(sys.executable, *args, environ)
 
 
-@bdrl_cmd(pattern="readme$")
+@keyy_cmd(pattern="readme$")
 async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n┌❏ [Repo](https://github.com/Yansaii/BdrlUserbot/blob/BdrlUserbot/README.md)"
+        "\n┌❏ [Repo](https://github.com/Keyyasst/KeyyUserbot/blob/KeyyUserbot/README.md)"
         "\n└❏ [Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)",
     )
 
 
-@bdrl_cmd(pattern="repeat (.*)")
+@keyy_cmd(pattern="repeat (.*)")
 async def repeat(event):
     cnt, txt = event.pattern_match.group(1).split(" ", 1)
     replyCount = int(cnt)
@@ -108,20 +108,20 @@ async def repeat(event):
     await edit_or_reply(event, replyText)
 
 
-@bdrl_cmd(pattern="repo$")
+@keyy_cmd(pattern="repo$")
 async def repo_is_here(event):
     xx = await edit_or_reply(event, "`Processing...`")
     await xx.edit(
-        f"**Hey**, Saya Menggunakan  **Bᴅʀʟ-Usᴇʀʙᴏᴛ** \n\n"
+        f"**Hey**, Saya Menggunakan  **Kᴇʏʏ-Usᴇʀʙᴏᴛ** \n\n"
         f"┌❏ **UserbotVersion :** `{BOT_VER}@{branch}`\n"
-        f"├❏ **GroupSupport :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/pantekyks)\n"
-        f"├❏ **Channel  :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](t.me/RuangTerbukaa)\n"
-        f"├❏ **OwnerRepo :** [Bdrl](t.me/BdrlBukan)\n"
-        f"└❏ **Repo :** [Bᴅʀʟ-Usᴇʀʙᴏᴛ](https://github.com/Yansaii/BdrlUserbot)\n"
+        f"├❏ **GroupSupport :** [Kᴇʏʏ-Usᴇʀʙᴏᴛ](t.me/pantekyks)\n"
+        f"├❏ **Channel  :** [Kᴇʏʏ-Usᴇʀʙᴏᴛ](t.me/akspaste)\n"
+        f"├❏ **OwnerRepo :** [Keyy](t.me/mfbyh)\n"
+        f"└❏ **Repo :** [Kᴇʏʏ-Usᴇʀʙᴏᴛ](https://github.com/Keyyasst/KeyyUserbot)\n"
     )
 
 
-@bdrl_cmd(pattern="string$")
+@keyy_cmd(pattern="string$")
 async def string_is_here(event):
     await edit_or_reply(
         event,
@@ -135,7 +135,7 @@ async def string_is_here(event):
     )
 
 
-@bdrl_cmd(pattern="raw$")
+@keyy_cmd(pattern="raw$")
 async def raw(event):
     the_real_message = None
     reply_to_id = None
@@ -161,7 +161,7 @@ async def raw(event):
         )
 
 
-@bdrl_cmd(pattern="reverse(?: |$)(\d*)")
+@keyy_cmd(pattern="reverse(?: |$)(\d*)")
 async def okgoogle(img):
     if os.path.isfile("okgoogle.png"):
         os.remove("okgoogle.png")
@@ -254,7 +254,7 @@ async def scam(results, lim):
     return imglinks
 
 
-@bdrl_cmd(pattern="send (.*)")
+@keyy_cmd(pattern="send (.*)")
 async def send(event):
     if not event.is_reply:
         return await edit_or_reply(
@@ -297,11 +297,11 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": f"**Plugin : **`Repository BdrlUserbot`\
+        "repo": f"**Plugin : **`Repository KeyyUserbot`\
         \n\n  •  **Syntax :** `{cmd}repo`\
-        \n  •  **Function : **Menampilan link Repository BdrlUserbot\
+        \n  •  **Function : **Menampilan link Repository KeyyUserbot\
         \n\n  •  **Syntax :** `{cmd}string`\
-        \n  •  **Function : **Menampilan link String BdrlUserbot\
+        \n  •  **Function : **Menampilan link String KeyyUserbot\
     "
     }
 )
@@ -325,7 +325,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}shutdown`\
         \n  •  **Function : **Mematikan Userbot.\
         \n\n  •  **Syntax :** `{cmd} sleep`\
-        \n  •  **Function : **Biarkan BdrlUserbot tidur selama waktu yg ditetapkan.\
+        \n  •  **Function : **Biarkan KeyyUserbot tidur selama waktu yg ditetapkan.\
     "
     }
 )
