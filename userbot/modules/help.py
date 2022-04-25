@@ -8,12 +8,12 @@
 from userbot import CHANNEL
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, ICON_HELP, bot
-from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
+from userbot.utils import edit_delete, edit_or_reply, keyy_cmd
 
 modules = CMD_HELP
 
 
-@bdrl_cmd(pattern="help(?: |$)(.*)")
+@keyy_cmd(pattern="help(?: |$)(.*)")
 async def help(event):
     """For help command"""
     args = event.pattern_match.group(1).lower()
@@ -30,7 +30,7 @@ async def help(event):
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
         await edit_or_reply(
             event,
-            f"**✦ Daftar Perintah [Bdrl-Userbot](https://github.com/Yansaii/BdrlUserbot):**\n"
+            f"**✦ Daftar Perintah [Keyy-Userbot](https://github.com/Keyyasst/KeyyUserbot):**\n"
             f"**✦ Jumlah** `{len(modules)}` **Modules**\n"
             f"**✦ Owner:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
