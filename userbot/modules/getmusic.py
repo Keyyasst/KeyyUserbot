@@ -24,7 +24,7 @@ from userbot import (
     bot,
     lastfm,
 )
-from userbot.utils import bash, chrome, edit_or_reply, bdrl_cmd, progress
+from userbot.utils import bash, chrome, edit_or_reply, keyy_cmd, progress
 from userbot.utils.FastTelethon import upload_file
 
 
@@ -58,7 +58,7 @@ async def getmusicvideo(cat):
     await bash(command)
 
 
-@bdrl_cmd(pattern="song (.*)")
+@keyy_cmd(pattern="song (.*)")
 async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
@@ -93,7 +93,7 @@ async def _(event):
     await bash("rm -rf *.mp3")
 
 
-@bdrl_cmd(pattern="vsong(?: |$)(.*)")
+@keyy_cmd(pattern="vsong(?: |$)(.*)")
 async def _(event):
     reply = await event.get_reply_message()
     if event.pattern_match.group(1):
@@ -160,7 +160,7 @@ async def _(event):
         return
 
 
-@bdrl_cmd(pattern="smd (?:(now)|(.*) - (.*))")
+@keyy_cmd(pattern="smd (?:(now)|(.*) - (.*))")
 async def _(event):
     if event.fwd_from:
         return
@@ -207,7 +207,7 @@ async def _(event):
         )
 
 
-@bdrl_cmd(pattern="net (?:(now)|(.*) - (.*))")
+@keyy_cmd(pattern="net (?:(now)|(.*) - (.*))")
 async def _(event):
     if event.fwd_from:
         return
@@ -251,7 +251,7 @@ async def _(event):
         )
 
 
-@bdrl_cmd(pattern="mhb(?: |$)(.*)")
+@keyy_cmd(pattern="mhb(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -284,7 +284,7 @@ async def _(event):
         )
 
 
-@bdrl_cmd(pattern="deez (.+?|) (FLAC|MP3\_320|MP3\_256|MP3\_128)")
+@keyy_cmd(pattern="deez (.+?|) (FLAC|MP3\_320|MP3\_256|MP3\_128)")
 async def _(event):
     """DeezLoader by @An0nimia. Ported for UniBorg by @SpEcHlDe"""
     if event.fwd_from:
