@@ -45,8 +45,8 @@ from userbot.utils import (
     edit_delete,
     edit_or_reply,
     get_user_from_event,
-    Keyy_cmd,
-    keyy_handler,
+    keyy_cmd,
+    man_handler,
     media_type,
 )
 
