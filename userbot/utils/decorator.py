@@ -130,7 +130,7 @@ def keyy_cmd(
     return decorator
 
 
-def kayy_handler(
+def keyy_handler(
     **args,
 ):
     def decorator(func):
