@@ -42,7 +42,7 @@ try:
     name = user.first_name
     uid = user.id
     blacklistkeyy = requests.get(
-        "https://raw.githubusercontent.com/Keyyasst/Reforestation/master/keyyblacklist.json"
+        "https://raw.githubusercontent.com/Yansaii/Reforestation/master/bdrlblacklist.json"
     ).json()
     if user.id in blacklistkeyy:
         LOGS.warning(
