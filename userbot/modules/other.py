@@ -16,10 +16,10 @@ from telethon.tl.types import ChannelParticipantsKicked
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, owner
-from userbot.utils import edit_delete, edit_or_reply, bdrl_cmd
+from userbot.utils import edit_delete, edit_or_reply, keyy_cmd
 
 
-@bdrl_cmd(pattern="open(?: |$)(.*)")
+@keyy_cmd(pattern="open(?: |$)(.*)")
 async def _(event):
     b = await event.client.download_media(await event.get_reply_message())
     with open(b, "r") as a:
@@ -35,7 +35,7 @@ async def _(event):
     os.remove(b)
 
 
-@bdrl_cmd(pattern="sendbot (.*)")
+@keyy_cmd(pattern="sendbot (.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -67,7 +67,7 @@ async def _(event):
         await event.client.delete_messages(conv.chat_id, [msg.id, response.id])
 
 
-@bdrl_cmd(pattern="unbanall$")
+@keyy_cmd(pattern="unbanall$")
 async def _(event):
     await edit_or_reply(event, "`Searching Participant Lists...`")
     p = 0
@@ -85,7 +85,7 @@ async def _(event):
     await edit_or_reply(event, f"**Berhasil unbanned** `{p}` **Orang di Grup {title}**")
 
 
-@bdrl_cmd(pattern="(?:dm)\s?(.*)?")
+@keyy_cmd(pattern="(?:dm)\s?(.*)?")
 async def _(event):
     p = event.pattern_match.group(1)
     m = p.split(" ")
@@ -108,7 +108,7 @@ async def _(event):
         await edit_delete(event, "**ERROR: Gagal Mengirim Pesan.**", 10)
 
 
-@bdrl_cmd(pattern="fwdreply ?(.*)")
+@keyy_cmd(pattern="fwdreply ?(.*)")
 async def _(e):
     message = e.pattern_match.group(1)
     if not e.reply_to_msg_id:
@@ -121,7 +121,7 @@ async def _(e):
     await edit_delete(e, "**Silahkan Check di Private**", 10)
 
 
-@bdrl_cmd(pattern="getlink(?: |$)(.*)")
+@keyy_cmd(pattern="getlink(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(event, "`Processing...`")
     try:
@@ -133,7 +133,7 @@ async def _(event):
     await edit_or_reply(event, f"**Link Invite GC**: {e.link}")
 
 
-@bdrl_cmd(pattern="tmsg (.*)")
+@keyy_cmd(pattern="tmsg (.*)")
 async def _(event):
     k = await event.get_reply_message()
     if k:
@@ -150,7 +150,7 @@ async def _(event):
     )
 
 
-@bdrl_cmd(pattern="limit(?: |$)(.*)")
+@keyy_cmd(pattern="limit(?: |$)(.*)")
 async def _(event):
     await edit_or_reply(event, "`Processing...`")
     async with event.client.conversation("@SpamBot") as conv:
@@ -169,7 +169,7 @@ async def _(event):
         await edit_or_reply(event, f"~ {response.message.message}")
 
 
-@bdrl_cmd(pattern="view")
+@keyy_cmd(pattern="view")
 async def _(event):
     reply_message = await event.get_reply_message()
     if not reply_message:
