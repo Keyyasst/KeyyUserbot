@@ -1,11 +1,11 @@
 FROM mrismanaziz/man-userbot:buster
 
-RUN git clone -b main https://github.com/Yansaii/BdrlUserbot /home/bdrluserbot/ \
-    && chmod 777 /home/bdrluserbot \
-    && mkdir /home/bdrluserbot/bin/
+RUN git clone -b main https://github.com/Keyyasst/KeyyUserbot /home/keyyuserbot/ \
+    && chmod 777 /home/keyyuserbot \
+    && mkdir /home/keyyuserbot/bin/
 
-COPY ./sample_config.env ./config.env* /home/bdrluserbot/
+COPY ./sample_config.env ./config.env* /home/keyyuserbot/
 
-WORKDIR /home/bdrluserbot/
+WORKDIR /home/keyyuserbot/
 
 CMD ["python3", "-m", "userbot"]
