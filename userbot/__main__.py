@@ -51,7 +51,7 @@ try:
         sys.exit(1)
     if 1731365899 not in DEVS:
         LOGS.warning(
-            f"EOL\nKᴇʏʏ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Keyyasst>"
+            f"EOL\nBᴅʀʟ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Yansaii>"
         )
         sys.exit(1)
 except Exception as e:
