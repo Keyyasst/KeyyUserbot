@@ -6,7 +6,7 @@
 # Ported by @mrismanaziz
 # FROM Man-Userbot
 # Recode by @greyyvbss
-# Recode2 by @BukanBdrl
+# Recode2 by @mfbyh
 #
 
 from asyncio import sleep
@@ -24,7 +24,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from userbot import BIO_PREFIX, BOTLOG, BOTLOG_CHATID
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, DEFAULT_BIO, LASTFM_USERNAME, bot, lastfm
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 
 # =================== CONSTANT ===================
 LFM_BIO_ENABLED = "**last.fm current music to bio is now enabled.**"
@@ -48,7 +48,7 @@ LastLog = False
 # ================================================
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"lastfm$"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"lastfm$"))
 async def last_fm(lastFM):
     """For .lastfm command, fetch scrobble data from last.fm."""
     await lastFM.edit("`Processing...`")
@@ -212,7 +212,7 @@ async def get_curr_track(lfmbio):
     RUNNING = False
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"lastbio (on|off)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"lastbio (on|off)"))
 async def lastbio(lfmbio):
     arg = lfmbio.pattern_match.group(1).lower()
     global LASTFMCHECK
@@ -236,7 +236,7 @@ async def lastbio(lfmbio):
         await lfmbio.edit(LFM_ERR_NO_OPT)
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"lastlog (on|off)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"lastlog (on|off)"))
 async def lastlog(lstlog):
     arg = lstlog.pattern_match.group(1).lower()
     global LastLog
