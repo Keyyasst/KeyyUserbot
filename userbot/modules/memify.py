@@ -3,7 +3,7 @@
 # Ported from Userge and refactored by @KenHV
 # FROM Man-Userbot
 # Recode by @greyyvbss
-# Recode2 by @BukanBdrl
+# Recode2 by @mfbyh
 
 import os
 import textwrap
@@ -12,11 +12,11 @@ from PIL import Image, ImageDraw, ImageFont
 
 from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY, bot
-from userbot.events import bdrl_cmd
+from userbot.events import keyy_cmd
 from userbot.utils import runcmd, take_screen_shot
 
 
-@bot.on(bdrl_cmd(outgoing=True, pattern=r"mmf (.*)"))
+@bot.on(keyy_cmd(outgoing=True, pattern=r"mmf (.*)"))
 async def memify(event):
     reply_msg = await event.get_reply_message()
     input_str = event.pattern_match.group(1)
