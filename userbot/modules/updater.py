@@ -58,7 +58,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if heroku_app is None:
             await event.edit(
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy Bᴅʀʟ-Usᴇʀʙᴏᴛ dyno.**"
+                "**Kredensial Heroku tidak valid untuk deploy Kᴇʏʏ-Usᴇʀʙᴏᴛ dyno.**"
             )
             return repo.__del__()
         try:
