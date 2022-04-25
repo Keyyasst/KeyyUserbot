@@ -89,7 +89,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         await event.edit(
-            "`Bᴅʀʟ-Usᴇʀʙᴏᴛ Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
+            "`Kᴇʏʏ-Usᴇʀʙᴏᴛ Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
         )
 
     else:
