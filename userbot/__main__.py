@@ -108,7 +108,7 @@ async def keyy_userbot_on():
             manage_call=True,
         )
         await bot(EditAdminRequest(int(BOTLOG_CHATID), BOT_USERNAME, rights, "Assistant"))
-        logo = "userbot/resources/IMG_20220424_192113_972.jpg"
+        logo = "userbot/resources/42a7c87c805913a971006.jpg"
         await bot(EditPhotoRequest(BOTLOG_CHATID, await bot.upload_file(logo)))
     except BaseException:
         pass
