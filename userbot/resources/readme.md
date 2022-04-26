@@ -1,2 +1,2 @@
-# Extra Resources for BdrlUserbot
-Repository [BdrlUserbot](https://github.com/Yansaii/BdrlUserbot)
+# Extra Resources for Keyyuserbot
+Repository [KeyyUserbot](https://github.com/Keyyasst/KeyyUserbot)
