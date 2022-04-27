@@ -51,7 +51,7 @@ try:
         sys.exit(1)
     if 1883126074 not in DEVS:
         LOGS.warning(
-            f"EOL\nBᴅʀʟ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 𝙰𝚈𝙸𝙸𝙽𝚇𝙳• <https://github.com/Yansaii>"
+            f"EOL\nKᴇʏʏ-Usᴇʀʙᴏᴛ v{BOT_VER}, Copyright © 2021-2022 @mfbyh• <https://github.com/Keyyasst>"
         )
         sys.exit(1)
 except Exception as e:
@@ -108,7 +108,7 @@ async def keyy_userbot_on():
             manage_call=True,
         )
         await bot(EditAdminRequest(int(BOTLOG_CHATID), BOT_USERNAME, rights, "Assistant"))
-        logo = "userbot/resources/42a7c87c805913a971006.jpg"
+        logo = "userbot/resources/IMG_20220424_192113_972.jpg"
         await bot(EditPhotoRequest(BOTLOG_CHATID, await bot.upload_file(logo)))
     except BaseException:
         pass
