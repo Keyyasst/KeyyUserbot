@@ -48,7 +48,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern=r"^\.skb(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**EMANG KITA KENAL? KAGA GOBLOK SOKAB BANGET LU GOBLOK**"
+    await typew.edit("**WOI ANJING LU KALO PUNYA MUKA JANGAN KEK KONTOL NAPA MUKALU AJA AMA KONTOL GUA BAGUSAN KONTOL GUA ANJING KALO GAPERCAYA LU NGACA SONO ANJING NAJIS WE LIAT MUKA LU SUMPAH**"
                      )
 
 
