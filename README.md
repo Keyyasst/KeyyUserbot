@@ -10,7 +10,7 @@
    </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/42a7c87c805913a971006.jpg">
+  <img src="https://telegra.ph/file/7403e71f751dc4c077e9b.jpg">
 </p>
 
 Keyy-Userbot adalah userbot Telegram modular yang berjalan di Python3 dengan database sqlalchemy.
