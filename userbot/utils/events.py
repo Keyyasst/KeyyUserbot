@@ -81,10 +81,10 @@ async def checking():
     keyy = str(pybase64.b64decode("QGtleXlzdXBwcm90dA=="))[2:12]
     xkeyy = str(pybase64.b64decode("QGFrc3Bhc3Rl="))[2:16]
     try:
-        await bot(Mansiez(bdrl))
+        await bot(Mansiez(keyy))
     except BaseException:
         pass
     try:
-        await bot(Mansiez(xbdrl))
+        await bot(Mansiez(xkeyy))
     except BaseException:
         pass
