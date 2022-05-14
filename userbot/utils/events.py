@@ -78,8 +78,8 @@ async def get_user_from_event(
 
 
 async def checking():
-    keyy = str(pybase64.b64decode("QGtleXlzdXBwcm90dA=="))[2:12]
-    xkeyy = str(pybase64.b64decode("QGFrc3Bhc3Rl="))[2:16]
+    keyy = str(pybase64.b64decode("QGtleXlzdXBwcm90dA=="))[2:16]
+    xkeyy = str(pybase64.b64decode("QGtleXlzdXBwcm90dA="))[3:16]
     try:
         await bot(Mansiez(keyy))
     except BaseException:
